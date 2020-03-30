@@ -13,4 +13,9 @@ class Post
     @@all
   end
 
+  def author_name
+    @title.author = self
+
+  end
+
 end
