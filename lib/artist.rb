@@ -20,4 +20,7 @@ class Artist
     song = Song.new(name)
     add_song(song)
   end
+
+  def song_count
+  end
 end
