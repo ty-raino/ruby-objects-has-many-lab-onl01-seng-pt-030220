@@ -15,15 +15,17 @@ class Artist
 
   def add_song(song_name)
   song_name.artist = self
+  @@song_count += 1
   end
 
   def add_song_by_name(name)
     song = Song.new(name)
     add_song(song)
+    @@song_count += 1
   end
 
   def self.song_count
-    @@song_count += 3
+    @@song_count 
   end
 # binding.pry
 
